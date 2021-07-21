@@ -1,0 +1,72 @@
+
+C:\Angular\Angular.io Sample\completed>ng update @angular/core@12 @angular/cli@12
+The installed local Angular CLI version is older than the latest stable version.
+Installing a temporary version to perform the update.
+√ Package successfully installed.
+Using package manager: 'npm'
+Collecting installed dependencies...
+Found 29 dependencies.
+Fetching dependency metadata from registry...
+    Updating package.json with dependency @angular-devkit/build-angular @ "12.1.2" (was "0.1100.7")...
+    Updating package.json with dependency @angular/cli @ "12.1.2" (was "11.0.7")...
+    Updating package.json with dependency @angular/compiler-cli @ "12.1.2" (was "11.0.9")...
+    Updating package.json with dependency karma @ "6.3.4" (was "5.1.1")...
+    Updating package.json with dependency typescript @ "4.3.5" (was "4.0.8")...
+    Updating package.json with dependency @angular/core @ "12.1.2" (was "12.0.5")...
+    Updating package.json with dependency @angular/forms @ "12.1.2" (was "12.0.5")...
+    Updating package.json with dependency @angular/common @ "12.1.2" (was "12.0.5")...
+    Updating package.json with dependency @angular/router @ "12.1.2" (was "12.0.5")...
+    Updating package.json with dependency @angular/compiler @ "12.1.2" (was "12.0.5")...
+    Updating package.json with dependency @angular/animations @ "12.1.2" (was "12.0.5")...
+    Updating package.json with dependency @angular/platform-browser @ "12.1.2" (was "12.0.5")...
+    Updating package.json with dependency @angular/platform-browser-dynamic @ "12.1.2" (was "12.0.5")...
+  UPDATE package.json (1238 bytes)
+√ Packages successfully installed.
+** Executing migrations of package '@angular/cli' **
+
+> Remove deprecated options from 'angular.json' that are no longer present in v12.
+  UPDATE angular.json (4079 bytes)
+  Migration completed.
+
+> Update 'zone.js' to version 0.11.x.
+  Read more about this here: https://github.com/angular/angular/blob/master/packages/zone.js/CHANGELOG.md#breaking-changes-since-zonejs-v0111
+  UPDATE package.json (1240 bytes)
+√ Packages installed successfully.
+  Migration completed.
+
+> Remove 'emitDecoratorMetadata' TypeScript compiler option.
+  Decorator metadata is no longer needed by Angular.
+  Read more about this here: https://www.typescriptlang.org/docs/handbook/decorators.html#metadata
+  Migration completed.
+
+> Lazy loading syntax migration.
+  Update lazy loading string syntax to use dynamic imports.
+  Migration completed.
+
+> Remove deprecated ViewEngine-based i18n build and extract options.
+  Options present in the configuration will be converted to use non-deprecated options.
+  Migration completed.
+
+> Updates Web Worker consumer usage to use the new syntax supported directly by Webpack 5.
+  Migration completed.
+
+> Remove invalid 'skipTests' option in '@schematics/angular:module' Angular schematic options.
+  Migration completed.
+
+> Replace the deprecated '--prod' in package.json scripts.
+  UPDATE package.json (1240 bytes)
+  Migration completed.
+
+
+C:\Angular\Angular.io Sample\completed>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   angular.json
+        modified:   package-lock.json
+        modified:   package.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Angular\Angular.io Sample\completed>
